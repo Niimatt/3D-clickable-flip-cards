@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cake Recipes</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="cards-wrapper">
+    
+    <!-- Red Velvet -->
+    <div class="card-container">
+      <div class="card" id="red-velvet">
+        <button class="flip-btn" onclick="flipCard('red-velvet')"><i class="fas fa-sync-alt"></i></button>
+        <div class="card-front" style="background-image: url('https://pastryliving.com/wp-content/uploads/2024/05/red-velvet-cake-10.jpg');">
+          <h2>Red Velvet Cake</h2>
+          <p>Moist & Classic</p>
+        </div>
+        <div class="card-back" style="background-color: transparent">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>Flour, Sugar, Cocoa</li>
+            <li>Buttermilk, Eggs, Oil</li>
+            <li>Red food coloring, Vinegar</li>
+          </ul>
+          <h2>Instructions</h2>
+          <p>1. Mix dry and wet ingredients.<br>2. Bake at 350°F for 30 mins.<br>3. Cool and frost with any frosting of choice.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chocolate Cake -->
+    <div class="card-container">
+      <div class="card" id="chocolate">
+        <button class="flip-btn" onclick="flipCard('chocolate')"><i class="fas fa-sync-alt"></i></button>
+        <div class="card-front" style="background-image: url('https://www.bakedambrosia.com/wp-content/uploads/2023/10/Moist-Chocolate-Cake-20.jpg');">
+          <h2>Chocolate Cake</h2>
+          <p>Rich & Fudgy</p>
+        </div>
+        <div class="card-back" style="background-color: transparent">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>Cocoa, Flour, Sugar</li>
+            <li>Eggs, Milk, Butter</li>
+            <li>Vanilla extract, Baking soda</li>
+          </ul>
+          <h2>Instructions</h2>
+          <p>1. Combine ingredients.<br>2. Bake at 350°F for 35 mins.<br>3. Let cool and serve.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vanilla Cake -->
+    <div class="card-container">
+      <div class="card" id="vanilla">
+        <button class="flip-btn" onclick="flipCard('vanilla')"><i class="fas fa-sync-alt"></i></button>
+        <div class="card-front" style="background-image: url('https://sallysbakingaddiction.com/wp-content/uploads/2019/01/vanilla-cake-5.jpg');">
+          <h2>Vanilla Cake</h2>
+          <p>Light & Fluffy</p>
+        </div>
+        <div class="card-back" style="background-color:transparent">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>Flour, Sugar, Baking powder</li>
+            <li>Eggs, Vanilla, Milk</li>
+            <li>Butter</li>
+          </ul>
+          <h2>Instructions</h2>
+          <p>1. Mix wet and dry ingredients separately. <br>2. Pour Dry ingredients into wet.<br>3. Bake at 350°F for 25 mins.<br>4. Cool and enjoy!</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function flipCard(id) {
+      const card = document.getElementById(id);
+      card.classList.toggle('flipped');
+    }
+  </script>
+
+</body>
+</html>
